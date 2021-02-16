@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+{/*  */}
 
 function App() {
   return (
@@ -13,11 +14,16 @@ function App() {
 
   {/* #2 2 .map(~), props */}
 
-    {foodILike.map((a)=>
+{/* 
+1. { }
+2. .map(~)
+3. .map( ( a ) => <컴포넌트이름/> )  */}
+  
+{
+  foodILike.map((a)=>
       <Food name={a.name} picture={a.image}/>
-  )}
-
-
+  )
+}
     </div>
   );
 }
